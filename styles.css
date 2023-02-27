@@ -1,0 +1,242 @@
+html {
+    background-image: url(https://ltdfoto.ru/images/2023/02/25/background.jpg);
+    background-repeat: repeat;    
+    background-position: center center;    
+    background-attachment: fixed;    
+    -webkit-background-size: auto;    
+    -moz-background-size: auto;    
+    -o-background-size: auto;
+    background-size: auto;
+    }
+
+body {
+    font-family: 'Tilt Neon', cursive, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:#c26652;
+}
+
+p {
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+header > img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    max-width: 88vw;
+}
+
+/* Add nav-panel*/
+
+nav {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 86vw;
+    border-radius: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+ul a {
+    background-color: #c26652;
+    border: solid 1px #c26652;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+ul a:hover {
+    background-color: #ffffff;;
+    border: solid 1px;
+    border-radius: 1rem;
+    color:  #c26652;;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    box-shadow: 0rem 0rem 0.5rem #c26652;
+}
+
+a {
+    background-color: #c26652;
+    border: solid 1px #c26652;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.01rem 0.3rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a:hover {
+    background-color: white;
+    border: solid 1px #c26652;
+    border-radius: 0.5rem;
+    color: #c26652;
+    padding: 0.01rem 0.3rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transform: scale(1.1);
+}
+
+/* Styling Promo section */
+
+.promo {
+    display: flex;
+}
+
+.content {
+    width: 60%;
+    margin: auto;    
+}
+
+.content h1:hover {
+color: rgb(255, 60, 1);
+}
+
+.promo_img > img {
+    min-width: auto;
+    min-height: 20vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Styling main Section & Article*/
+
+section {
+    display: flex;
+    margin: 1%;
+}
+
+article {
+    flex: 1;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: #ffffff;
+    border: solid 1px #c26652;
+    border-radius: 1rem;
+    color: #c26652;
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+}
+
+article > h1, h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+article:hover {
+    box-shadow: 0rem 0rem 0.5rem #c26652;
+    transform: scale(1.01);
+}
+
+.img {
+    width: 10vw;
+    margin-top: 1rem;
+}
+
+.schedule p {
+    text-align: center;
+}
+
+.schedule {
+    margin-top: 1rem;
+}
+
+/* Footer*/
+
+footer {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+footer div {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    flex: 1;
+}
+
+div > img {
+    float: left;
+    max-height: 3rem;
+    text-align: left;
+}
+
+footer p {
+    text-align: right;
+}
+
+.footer_img:hover {
+    transform: rotateX(360deg) scale(1.2);
+    transition: 1.5s;
+
+}
+
+/* Media */
+
+@media (max-width: 800px) {
+
+    .promo_img > img {
+        display: none;
+    }
+    
+    .content {
+         width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+        margin: 1%;
+    
+    }
+    article {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .img {
+        float:left;
+        margin: 10px 10px 10px 0;
+   }
+}
